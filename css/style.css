@@ -4,18 +4,37 @@
     box-sizing: border-box;
 }
 
-.app-content-box {
+.app-container {
     height: calc(100vh - 100px);
     background-color: #141922;
     display: flex;
+}
+
+.content-box {
+    padding: 0 20px;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.title {
+    color: #fff;
+}
+
+.grey-text {
+    color: #6F6F6F;
+}
+
+a {
+    text-decoration: none;
 }
 /* Sidebar */
 .sidebar {
     width: 250px;
     height: 100%;
+    padding-left: 15px;
     background-color: #000;
-    display: flex;
-    flex-direction: column;
 }
 /* / Sidebar */
 
@@ -27,14 +46,79 @@
     padding-top: 100px;
 }
 
-.button-container {
+.upgrade-container {
     height: 100px;
     width: calc(100% - 250px);
-    line-height: 80px;
+    padding-right: 22px;
     position: fixed;
     top: 0;
     background-color: rgba(8, 11, 18, 0.5);
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
+
+.upgrade-button {
+    padding: 12px 36px;
+    border: 1px #fff solid;
+    border-radius: 25px;
+    background-color: inherit;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-container ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-container ul li {
+    list-style: none;
+    font-weight: bold;
+    padding: 20px 10px;
+}
+
+.album-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.album-box {
+    width: 250px;
+    margin-top: 30px;
+}
+
+.album-cover {
+    width: 100%;
+}
+
+.album-cover img {
+    width: 100%;
+}
+
+.album-name-n-author {
+    text-align: center;
+}
+
+.album-name-n-author h3 {
+    margin: 15px 0 10px 0;
+}
+
+.advised-container {
+    display: flex;
+    justify-content: start;
+    
+}
+.advised-container .artist img {
+    border-radius: 50%;
+}  
 /* Main */
 
 /* Footer */
@@ -68,7 +152,7 @@ footer {
         width: calc(100% - 50px);
     }
     
-    .button-container {
+    .upgrade-container {
         width: calc(100% - 50px);
     }
 }
