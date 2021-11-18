@@ -4,48 +4,71 @@
     box-sizing: border-box;
 }
 
-.page-container {
-    width: 100%;
-    height: 100vh;
+.app-content-box {
+    height: calc(100vh - 100px);
     background-color: #141922;
-}
-
-main {
-    height: 100%;
     display: flex;
-    flex-wrap: wrap;
-} 
-
-.side-bar {
+}
+/* Sidebar */
+.sidebar {
     width: 250px;
     height: 100%;
     background-color: #000;
+    display: flex;
+    flex-direction: column;
+}
+/* / Sidebar */
+
+/* Main */
+.main {
+    width: calc(100% - 250px);
+    height: 100%;
+    overflow-y: scroll;
+    padding-top: 100px;
 }
 
-.main-content {
+.button-container {
+    height: 100px;
     width: calc(100% - 250px);
+    line-height: 80px;
+    position: fixed;
+    top: 0;
+    background-color: rgba(8, 11, 18, 0.5);
+}
+/* Main */
+
+/* Footer */
+footer {
+    height: 100px;
+    background-color: #282828;
+    display: flex;
+}
+
+.player-left, .player-right {
+    width: 250px;
+    max-width: calc(100% / 3);
     height: 100%;
 }
 
-.button-box {
-    height: 80px;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    background-color: #080B12;
+.player-center {
+    width: calc(100% / 500px);
+    height: 100%;
+    flex-grow: 1;
 }
+/* / Footer */
 
-footer {
-    width: 100%;
-    height: 80px;
-    position: fixed;
-    bottom: 0;
-    background-color: #282828;
-}
+/**************************************************/
 
 @media screen and (max-width: 575px) {
+    .sidebar {
+        width: 50px;
+    }
 
-    .side-bar {
-        width: 60px;
+    .main {
+        width: calc(100% - 50px);
+    }
+    
+    .button-container {
+        width: calc(100% - 50px);
     }
 }
