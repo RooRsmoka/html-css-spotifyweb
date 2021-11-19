@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -13,7 +16,63 @@
     <div class="app-container">
         <!-- Sidebar -->
         <div class="sidebar">
-        
+            <div class="top-sidebar">
+                <div class="logo">
+                    <img class="active-logo" src="img/logo.svg" alt="logo">
+                    <img class="hidden-logo" src="img/logo-small.svg" alt="">
+                </div>
+                <div class="menu">
+                    <div class="menu-items">
+                        <img class="menu-icon" src="img/home.svg" alt="Home">
+                        <a class="grey-text" href="#">Home</a>
+                    </div>
+                    <div class="menu-items">
+                        <img class="menu-icon" src="img/search.svg" alt="Search">
+                        <a class="grey-text" href="#">Cerca</a>
+                    </div>
+                    <div class="menu-items">
+                        <img class="menu-icon" src="img/libreria.svg" alt="Library">
+                        <a class="grey-text" href="#">La tua libreria</a>
+                    </div>
+                </div>
+            </div>
+            <div class="central-sidebar-top">
+                <h4 class="upper title">playlist</h4>
+                <div class="new-playlist grey-text">
+                    <div class="square">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <h4>Crea Playlist</h4>
+                </div>    
+            </div>
+            <div class="central-sidebar-bottom">
+                <div class="playlists">
+                    <ul>
+                        <li><a class="grey-text" href="#">Nome Playlist</a></li>
+                        <li><a class="grey-text" href="#">Nome Playlist</a></li> 
+                        <li><a class="grey-text" href="#">Nome Playlist</a></li>
+                        <li><a class="grey-text" href="#">Nome Playlist</a></li>
+                        <li><a class="grey-text" href="#">Nome Playlist</a></li>
+                        <li><a class="grey-text" href="#">Nome Playlist</a></li>
+                        <li><a class="grey-text" href="#">Nome Playlist</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bottom-sidebar">
+                <div class="install-app">
+                    <div class="download-icon">
+                        <img src="img/download.svg" alt="">
+                    </div>
+                    <div class="download-text grey-text">Installa app</div>
+                </div>
+                <div class="hr"></div>
+                <div class="profile">
+                    <div class="profile-icon">
+                        <img src="img/profile.svg" alt="">
+                    </div>
+                    <div class="username">John Doe</div>
+                </div>
+            </div>
         </div>
         <!-- / Sidebar -->
 
@@ -32,14 +91,17 @@
                     <li><a class="upper grey-text" href="">scopri</a></li>
                 </ul>
             </div>
-            <div class="content-box">
+
+
+
+            <div class="album-container">
                 <h2 class="title">Recently played</h2>
-                <div class="album-container">
+                <div class="flex-container">
                     <div class="album-box">
                         <div class="album-cover">
                             <img src="img/metal_lifting.jpg" alt="">
                         </div>
-                        <div class="album-name-n-author">
+                        <div class="album-description">
                             <h3 class="title">Heavy Metal</h3>
                             <p class="grey-text">Subtitle</p>
                         </div>
@@ -48,7 +110,7 @@
                         <div class="album-cover">
                             <img src="img/stranger.jpeg" alt="">
                         </div>
-                        <div class="album-name-n-author">
+                        <div class="album-description">
                             <h3 class="title">Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h3>
                             <p class="grey-text">Kyle Dixon & Michael Stein</p>
                         </div>
@@ -57,7 +119,7 @@
                         <div class="album-cover">
                             <img src="img/aquietplace.jpeg" alt="">
                         </div>
-                        <div class="album-name-n-author">
+                        <div class="album-description">
                             <h3 class="title">A quiet place</h3>
                             <p class="grey-text">Subtitle</p>
                         </div>
@@ -66,7 +128,7 @@
                         <div class="album-cover">
                             <img src="img/split.jpeg" alt="">
                         </div>
-                        <div class="album-name-n-author">
+                        <div class="album-description">
                             <h3 class="title">split</h3>
                             <p class="grey-text">Subtitle</p>
                         </div>
@@ -75,7 +137,7 @@
                         <div class="album-cover">
                             <img src="img/cure.jpeg" alt="">
                         </div>
-                        <div class="album-name-n-author">
+                        <div class="album-description">
                             <h3 class="title">A cure for wellness</h3>
                             <p class="grey-text">Subtitle</p>
                         </div>
@@ -84,14 +146,14 @@
                         <div class="album-cover">
                             <img src="img/sinister.jpeg" alt="">
                         </div>
-                        <div class="album-name-n-author">
+                        <div class="album-description">
                             <h3 class="title">Sinister</h3>
                             <p class="grey-text">Subtitle</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="content-box">
+            <div class="content-box advised-box">
                 <h2 class="title">Creato per John Doe</h2>
                 <p class="grey-text">Più ascolti, più accurati sarano i suggerimenti</p>
                 <div class="advised-container">
@@ -109,7 +171,7 @@
                     </div>
                 </div>
             </div>
-            <div class="content-box">
+            <div class="content-box advised-box">
                 <h2 class="title">Artisti più popolari</h2>
                 <p class="grey-text">Più ascolti, più accurati sarano i suggerimenti</p>
                 <div class="advised-container">
@@ -133,9 +195,7 @@
 
     <!-- Footer -->
     <footer>
-        <div class="player-left"></div>
-        <div class="player-center"></div>
-        <div class="player-right"></div>
+        
     </footer>
     <!-- / Footer -->
 </body>
